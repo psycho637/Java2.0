@@ -11,7 +11,7 @@ public class Present {
         Jellybean fish = new Jellybean("Мармеладные рыбки", 300.0, 58.6, "Синие");
         Cookies circle = new Cookies("Овсяное", 40.3, 15.2, 140.3);
         Cookies square = new Cookies("Крекер", 50.0, 61.5, 213.9);
-        Marshmallow marshmallow = new Marshmallow("Маршмэллоу", 120.2, 150.6, "Цилидрики");
+        Marshmallow marshmallow = new Marshmallow("Маршмэллоу", 120.2, 150.6, "Цилиндрики");
         Sweetness[] present = {mars, chup, pop, sour, bear, fish, circle, square, marshmallow};
 
         for (Sweetness someSweetness : present) {
