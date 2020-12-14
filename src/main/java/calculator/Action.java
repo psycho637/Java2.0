@@ -6,6 +6,8 @@ public class Action extends Numbers {
 
     public Action(double firstNumber, double secondNumber, String sign) {
         super(firstNumber, secondNumber);
+
+        result = pickAction(sign);
     }
 
     public String getSign() {
@@ -16,7 +18,7 @@ public class Action extends Numbers {
         this.sign = sign;
     }
 
-    public String pickAction (String sign) {
+    public String pickAction(String sign) {
         switch (sign) {
             case "+":
                 Sum result1 = new Sum(getFirstNumber(), getSecondNumber());
@@ -31,10 +33,8 @@ public class Action extends Numbers {
                 Division result4 = new Division(getFirstNumber(), getSecondNumber());
                 return String.valueOf(result4);
             default:
-                System.out.println("Что-то странное, начнем сначала");
+                return "Что-то странное, начнем сначала";
         }
-
-        return null;
 
     }
 
