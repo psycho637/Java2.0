@@ -1,27 +1,22 @@
 package calculator;
 
+import static jdk.nashorn.internal.objects.Global.Infinity;
+
 public class Division extends Numbers {
 
     public Division(double firstNumber, double secondNumber) {
         super(firstNumber, secondNumber);
-        theDev = theDevision(getFirstNumber(),getSecondNumber());
-//        System.out.println("я внутри контруктора Division");
+        theDev = theDevision(getFirstNumber(), getSecondNumber());
     }
 
-    double theDev;
+    String theDev;
 
-    public double theDevision (double firstNumber, double secondNumber) {
-//        System.out.println("я старте " + getFirstNumber() + " " + getSecondNumber());
-        double x = 0.0;
-        try {
-            x = firstNumber / secondNumber;
-//            System.out.println("я внутри блока try " + x);
-        } catch (ArithmeticException e) {
-//            x = 9999999;
-            System.out.println("УУУУУУуууууу, на ноль поделил?");
+    public String theDevision(double firstNumber, double secondNumber) {
+        double x = firstNumber / secondNumber;
+        if (x == Infinity) {
+            return "УУУУУУуууууу, на ноль поделил?";
         }
-//        System.out.println(x);
-        return x;
+        return String.valueOf(x);
     }
 
     @Override
