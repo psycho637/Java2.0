@@ -37,7 +37,6 @@ public class Action extends Numbers {
         }
 
     }
-
     public String toString() {
         return String.valueOf(result);
     }
