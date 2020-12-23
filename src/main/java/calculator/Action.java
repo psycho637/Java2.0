@@ -24,7 +24,7 @@ public class Action extends Numbers {
                 Sum result1 = new Sum(getFirstNumber(), getSecondNumber());
                 return String.valueOf(result1);
             case "-":
-                Subtraction result2 = new Subtraction(getFirstNumber(), getSecondNumber());
+                Substraction result2 = new Substraction(getFirstNumber(), getSecondNumber());
                 return String.valueOf(result2);
             case "*":
                 Multiplication result3 = new Multiplication(getFirstNumber(), getSecondNumber());

@@ -1,6 +1,6 @@
 package calculator;
 
-public abstract class Numbers {
+public class Numbers {
     private double firstNumber;
     private double secondNumber;
 
@@ -8,6 +8,7 @@ public abstract class Numbers {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
     }
+    public Numbers() {}
 
     public double getFirstNumber() {
         return firstNumber;

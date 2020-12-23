@@ -1,7 +1,7 @@
 package calculator;
 
-public class Subtraction extends Numbers {
-    public Subtraction(double firstNumber, double secondNumber) {
+public class Substraction extends Numbers {
+    public Substraction(double firstNumber, double secondNumber) {
         super(firstNumber, secondNumber);
     }
     double theSub = getFirstNumber() - getSecondNumber();
