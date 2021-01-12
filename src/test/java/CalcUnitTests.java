@@ -1,5 +1,5 @@
-package calculator;
-
+import calculator.Action;
+import calculator.Numbers;
 import org.junit.Assert;
 import org.junit.Test;
 
