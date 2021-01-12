@@ -1,7 +1,5 @@
 package calculator;
 
-import static jdk.nashorn.internal.objects.Global.Infinity;
-
 public class Division extends Numbers {
 
     public Division(double firstNumber, double secondNumber) {
@@ -13,7 +11,7 @@ public class Division extends Numbers {
 
     public String theDevision(double firstNumber, double secondNumber) {
         double x = firstNumber / secondNumber;
-        if (x == Infinity) {
+        if (Double.isInfinite(x)) {
             return "УУУУУУуууууу, на ноль поделил?";
         }
         return String.valueOf(x);
